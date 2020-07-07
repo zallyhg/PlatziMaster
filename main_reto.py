@@ -1,5 +1,8 @@
+"""
+    Reto de Julián Santos
+    email: ingjuliansantos@gmail.com
 
-
+"""
 
 def list_input(number_quantity,number_lower_limit, number_upper_limit):
     numbers_list = []
