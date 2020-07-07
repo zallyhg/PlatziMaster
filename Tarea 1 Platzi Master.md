@@ -12,11 +12,14 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
    - La pregunta es en que posición queda a0.
 
 2. Define los datos de entrada:
+   - Todos los números son distintos.
    - L[0] = a0
    - L tiene N posiciones que van desde 0 hasta N-1. 
 
 
-3. Haz tu análisis
+3. Haz tu análisis.
+   Tengo un número finito de números dentro de una lista, lo que debo hacer es iterar dentro de los elementos de la lista para hallar la posición final de a0.
+   
 4. Resume tus conclusiones
 5. Elige el algoritmo
 6. Prueba
