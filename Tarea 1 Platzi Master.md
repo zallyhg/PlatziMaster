@@ -63,4 +63,8 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
     Al comparar a0 con todas las posiciones de L y corriendo a0 cada vez que este es mayor, el número a0 está en la posición 9.
 
 
-7. Obtén la complejidad computacional
+7. Obtén la complejidad computacional:
+   - Los algoritmos para solucionar este problema tienen una complejidad computacional en notación BIG O de NLOGN, ya que el conjunto de datos se divide en dos partes cuando realizo el if, pero debo
+     realizar este proceso N veces (ciclo for) hasta encontrar la solución. No obstante, el algoritmo 1 tiene una complejidad adicional (aunque es pequeña), puesto que tiene una instrucción adicional:
+     ordenar la lista (sentencia sorted()).
+     
