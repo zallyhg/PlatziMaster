@@ -4,7 +4,13 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
 
 ### Pasos a seguir que debes incluir en tu solución
 
-1. Entiende la descripción del problema
+1. Entiende la descripción del problema: 
+   - Tengo una lista desordenada a la que voy a llamar L = []. 
+   - El valor mínimo de L es 0 y el valor máximo es M.
+   - L tiene N posiciones que van desde 0 hasta N-1. 
+   - Estando desordenada L[0] = a0.
+   - La pregunta es en que posición queda a0.
+
 2. Define los datos de entrada
 3. Haz tu análisis
 4. Resume tus conclusiones
