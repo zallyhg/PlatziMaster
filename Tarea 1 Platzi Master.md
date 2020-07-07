@@ -25,5 +25,29 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
    - Ordenando la lista y comparando cada elemento de la lista con a0 para encontrar su posición.
    - Sin ordenar la lista comparar a0 con cada número en la lista y ver cuantas posiciones se corre a la derecha dependiendo de cuantos números sean menores que el.
 5. Elige el algoritmo
+   - Algoritmo 1: 
+
+   L = [a0, ... , z]
+   L_ord = sorted(L)
+   contador = 0
+   for No in L_ord:
+       if a0 == No:
+           posicion = contador
+       else:
+           contador+=1
+
+    print(L_ord) 
+    print(posicion)
+
+    - Algoritmo 2:
+
+    L = [a0, ... , z]
+    contador = 0
+    for i in range(1,len(L)):
+        if a0 > L[i]:
+            contador+=1
+
+    print(contador)    
+
 6. Prueba
 7. Obtén la complejidad computacional
