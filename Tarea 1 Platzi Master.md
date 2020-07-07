@@ -21,6 +21,9 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
    Tengo un número finito de números dentro de una lista, lo que debo hacer es iterar dentro de los elementos de la lista para hallar la posición final de a0.
    
 4. Resume tus conclusiones
+   Puedo solucionar el problema de dos formas:
+   - Ordenando la lista y comparando cada elemento de la lista con a0 para encontrar su posición.
+   - Sin ordenar la lista comparar a0 con cada número en la lista y ver cuantas posiciones se corre a la derecha dependiendo de cuantos números sean menores que el.
 5. Elige el algoritmo
 6. Prueba
 7. Obtén la complejidad computacional
