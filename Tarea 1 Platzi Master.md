@@ -11,7 +11,11 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
    - Estando desordenada L[0] = a0.
    - La pregunta es en que posición queda a0.
 
-2. Define los datos de entrada
+2. Define los datos de entrada:
+   - L[0] = a0
+   - L tiene N posiciones que van desde 0 hasta N-1. 
+
+
 3. Haz tu análisis
 4. Resume tus conclusiones
 5. Elige el algoritmo
