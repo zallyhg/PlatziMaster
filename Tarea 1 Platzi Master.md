@@ -50,4 +50,17 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
     print(contador)    
 
 6. Prueba
+    - Algoritmo 1:
+
+    L = [59,8,6,10,85,1,105,47,55,23,26,9,205]
+    L_ord = [1, 6, 8, 9, 10, 23, 26, 47, 55, 59, 85, 105, 205]
+    En este caso nuestro numero a0 va a ser 59
+    El número a0 está en la posición 9.
+
+    - Algoritmo 2:
+
+    L = [59,8,6,10,85,1,105,47,55,23,26,9,205]
+    Al comparar a0 con todas las posiciones de L y corriendo a0 cada vez que este es mayor, el número a0 está en la posición 9.
+
+
 7. Obtén la complejidad computacional
