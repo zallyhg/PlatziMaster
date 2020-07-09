@@ -34,6 +34,7 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
 
 6. Prueba
 
+    ```
     function bubbleSort(lista) {
         for (let i = 0; i < lista.length; i++) {
             for (let j = 0; j < lista.length; j++) {
@@ -45,9 +46,9 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
             };
         };
         console.log(lista);
-    };
-
-    const listNumbers = [4 , 7, 9, 3, 5, 2, 1, 6];
-    console.log(bubbleSort(listNumbers)); //mostrará la lista ordenada.
+        };
+        const listNumbers = [4 , 7, 9, 3, 5, 2, 1, 6];
+        console.log(bubbleSort(listNumbers)); //mostrará la lista ordenada.
+```
 
 7. Obtén la complejidad computacional
