@@ -1,0 +1,65 @@
+//1. Entiende la descripción del problema:
+//R/Ya tengo una lista y necesito saber en que posicion quedara el primer numero (a0) luego de ordenarla.            
+//La respuesta estara entre 0 y N-1
+
+//2. Define los datos de entrada:
+//R/ Una lista de N elementos que ya tengo y que esta desordenada.
+
+//3. Haz tu analisis:
+//R/ dada la lista, tendria que guardar el primer valor en una variable para luego con algun algoritmo hacer el ordenamiento y luego si por comparacion saber en que posicion quedo mi numero de interes.
+
+//4. Resume tus conclusiones:
+//R/ guardar a0 -> ordenar lista -> buscar a0 en la lista -> imprimir posicion en terminal
+
+//5. Elige el algoritmo:
+//R/ No hay ningun elemento en el problema que limite la seleccion del algoritmo, asi que usare insertionSort aunque podria haber usado cualquier otro.
+
+//6. Prueba:
+//R/ Al final del documento esta el codigo que resuelve el problema.
+
+//7. Complejidad computacional:
+//R/ El algoritmo requiere ejecutar un for que es recorrido n veces y otro anidado que se ejecuta n/2 veces. En el peor de los casos (una lista ordenada descendente) habría que ejecutar 4(n * n/2) instrucciones para ordenar, mas n recorridos adicionales para encontrar la posicion de a0 y 1 mas para imprimir la respuesta. En conclusion, la complejidad seria O(N2) y la funcion seria algo como 2n^2+n+1.
+
+//CODIGO
+
+#include <stdio.h>                                                                                                   
+#include <stdlib.h>
+
+void swapNumbers(int * n1, int * n2){
+        int temp = * n1;
+        * n1 = * n2;
+        * n2 = temp;
+}
+
+void insertionSort( int secuencia[], int n){
+        for (int i = 1; i < n; i++){
+                for (int j = i-1; j >= 0; j--){
+                        if (secuencia[j+1] < secuencia[j]) {
+                                        swapNumbers(&secuencia[j], &secuencia[j+1]);
+                        }
+                }
+        }
+
+}
+
+int findPosition (int secuencia[], int n, int a0){
+        for (int i = 0; i < n; i++) {
+                if (a0 == secuencia[i]){
+                        return i;                                                                                    
+                }
+        }
+}
+
+
+int main (int argc, const char * argv[]){
+        //Lista desordenada de N numeros
+        int secuencia[] = {10, 200, 5, -4, 2, 35, 777, 985, -50, 0, 1, -74, 556874, 3241, -5669};
+        int n = sizeof(secuencia)/sizeof(secuencia[0]);
+        int a0 = secuencia[0];
+
+        insertionSort(secuencia, n);
+        int posicion = findPosition(secuencia, n, a0);
+
+        printf("La posicion de a0 es la #%d\n", posicion);
+
+}
