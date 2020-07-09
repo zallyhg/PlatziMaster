@@ -34,7 +34,7 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
 
 6. Prueba
 
-    ```
+    ```javascript
     function bubbleSort(lista) {
         for (let i = 0; i < lista.length; i++) {
             for (let j = 0; j < lista.length; j++) {
