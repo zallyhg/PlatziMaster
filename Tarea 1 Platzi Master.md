@@ -1,6 +1,6 @@
 # Tarea 1 Julián Cubillos [C5]
 
-Tienes una lista desordenada con N números distintos los cuales tienen valores entre 0 y M. Llamemos al primer número de esta lista a0 . Debes ordenar los números de la lista y ver en qué posición queda el número a0 . En este problema la primera posición de la lista es la posición 0 y la última es la posición N – 1.
+Tienes una lista desordenada con N números distintos los cuales tienen valores entre 0 y M. Llamemo:s al primer número de esta lista a0 . Debes ordenar los números de la lista y ver en qué posición queda el número a0 . En este problema la primera posición de la lista es la posición 0 y la última es la posición N – 1.
 
 ### Pasos a seguir que debes incluir en tu solución
 
@@ -22,9 +22,9 @@ Respuesta: Si la cantidad de los datos son menores a 50 puedo usar insertionsort
 Si la cantidad de datos es menor a 100 puedo usar bubblesort o selectionsort
 Si la cantidad es mayor de 100 datos puedo usar algoritmos tipo quicksort o mergesort.
 
-6. Prueba Usando un metodo 1 a 1
+6. Prueba Usando un metodo 1 a 1 (Abrir archivo original)
 Vuelta 1
-(*8, *4, 0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 0  Lista original \n
+(*8, *4, 0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 0  Lista original
 (4, *8, *0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 1
 (4, 0, *8, *2, 6, 9, 3, 1, 7, 5)  Iteraccion 2
 (4, 0, 2, *8, *6, 9, 3, 1, 7, 5)  Iteraccion 3
@@ -76,7 +76,7 @@ Vuelta 8
 (*0, *1, 2, 3, 4, 5, 6, 7, 8, 9)  Iteraccion 41
 (0, *1, *2, 3, 4, 5, 6, 7, 8, 9)  Iteraccion 42 Ordenado 2, 3, 4, 5, 6, 7, 8, 9; N-1 = 2
 Vuelta 9
-(*0, *1, 2, 3, 4, 5, 6, 7, 8, 9)  Iteraccion 43 Ordenado 0, 1, 2, 3, 4, 5, 6, 7, 8, 9; N-1 = 2
+(*0, *1, 2, 3, 4, 5, 6, 7, 8, 9)  Iteraccion 43 Ordenado 0, 1, 2, 3, 4, 5, 6, 7, 8, 9; N-1 = 1
 
 7. Obtén la complejidad computacional
 Respuesta: Si los cantidad de datos dados son pocas el algoritmo de ordenamiento puede tener una complejidad de crecimiento exponencial donde pueda anidar varias ciclos repetitivos, esto porque la cantidad de datos no va a ser un problema sencillo de calculo para la computadora, no me va generar un retraso en tiempo y la resolucion va a ser muy rapida.
