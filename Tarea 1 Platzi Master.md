@@ -51,4 +51,4 @@ Al final obtenemos el indice del dato ya que guardamos inicialmente su valor.
 
 7. Obtén la complejidad computacional
 
-Este algoritmo tiene una complejidad computacional del tipo O(n^2).
+Este algoritmo tiene una complejidad computacional del tipo O(n^3).
