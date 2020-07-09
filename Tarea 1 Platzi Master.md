@@ -1,6 +1,6 @@
 # Tarea 1 Julián Cubillos [C5]
 
-Tienes una lista desordenada con N números distintos los cuales tienen valores entre 0 y M. Llamemo:s al primer número de esta lista a0 . Debes ordenar los números de la lista y ver en qué posición queda el número a0 . En este problema la primera posición de la lista es la posición 0 y la última es la posición N – 1.
+Tienes una lista desordenada con N números distintos los cuales tienen valores entre 0 y M. Llamemos al primer número de esta lista a0 . Debes ordenar los números de la lista y ver en qué posición queda el número a0 . En este problema la primera posición de la lista es la posición 0 y la última es la posición N – 1.
 
 ### Pasos a seguir que debes incluir en tu solución
 
@@ -22,7 +22,7 @@ Respuesta: Si la cantidad de los datos son menores a 50 puedo usar insertionsort
 Si la cantidad de datos es menor a 100 puedo usar bubblesort o selectionsort
 Si la cantidad es mayor de 100 datos puedo usar algoritmos tipo quicksort o mergesort.
 
-6. Prueba Usando un metodo 1 a 1 (Abrir archivo original)
+6. Prueba Usando un metodo 1 a 1 (Abrir el archivo de texto directamente para que salga de manera ordenada)
 Vuelta 1
 (*8, *4, 0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 0  Lista original
 (4, *8, *0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 1
