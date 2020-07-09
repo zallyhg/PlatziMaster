@@ -37,3 +37,4 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
     iteracion n [1,3,4,5,6]
     contador = 3  
 7. Obtén la complejidad computacional
+    De acuerdo a las laminas de la presentación su comlejidad sería O(N) o sea lineal
