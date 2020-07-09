@@ -1,7 +1,0 @@
-2.- Lista con N numeros entre 0 y m, ordenarlos y encontrar en donde queda el elemento a0
-
-3.- El primer paso tiene que ser ordenar la lista, pero es necesario tambien pensar en una forma para saber en donde se encuentra el elemento a0, ya que la lista de numeros consta de numeros distintos, deberia bastar con guardar que numero se encuentra en a0 para despues hacer solo una simple busqueda y obtener su posicion
-
-4.- Basicamente, necesito conocer a0, despues ordenar la lista, y por ultimo encontrar la posicion de a0
-
-5.- Usare ordenamientoBurbuja ya que es el mas sencillo de implementar
