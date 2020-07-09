@@ -24,7 +24,7 @@ Si la cantidad es mayor de 100 datos puedo usar algoritmos tipo quicksort o merg
 
 6. Prueba Usando un metodo 1 a 1
 Vuelta 1
-(*8, *4, 0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 0  Lista original
+(*8, *4, 0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 0  Lista original \n
 (4, *8, *0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 1
 (4, 0, *8, *2, 6, 9, 3, 1, 7, 5)  Iteraccion 2
 (4, 0, 2, *8, *6, 9, 3, 1, 7, 5)  Iteraccion 3
