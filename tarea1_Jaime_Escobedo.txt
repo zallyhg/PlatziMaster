@@ -1,0 +1,68 @@
+Descripción del problema:
+
+	Se tiene una serie de números para ordenar y hay que  saber 
+	en que lugar quedó el primer número, que en este caso es llamado a0.
+	Los lugares se cuentan a partir de 0 y no de 1. 
+        Así que el primer lugar es 0 y el último es la cantidad de números menos 1 
+	ya que comenzamos desde 0 y no de 1. 
+
+Datos de entrada:
+
+	1)lista desordenada 
+	2)(N)cantidad de distintos números 
+	3)valor entre 0 y M
+	4)Posición de 0 a n-1
+
+Análisis: 
+
+	Se tienen que comparar los números adyacentes, y hacer cambio si el primero es 
+	mayor que el segundo. 
+
+	Si a > b se hace el switch. Si no, se avanza a la siguiente posición. (dirección ascendente)
+	Si a < b se hace el switch. Si no, se avanza a la siguiente posición. (dirección descendente)
+
+	Hay que iniciar el ciclo hasta que haya un ciclo completo sin ningún switch. Y agregar una variable 
+	P donde represente la posición de a0. Si hay un switch de a0 se agrega +1 a P.
+
+Conclusiones: 
+
+	
+	Se tienen que ir comparando por pares los números y reiniciar el ciclo una y otra vez. 
+	Va moviendo prácticamente de uno a uno los valores y puede ser muy tardado.
+
+Algoritmo:
+	Buble Sort, que va comparando y moviendo por pares cada uno de los elementos de la lista en repetidas iteraciones
+	hasta obtener un ciclo con 0 cambios.
+	
+	P = a0 +1 
+	Donde P representa la posición y se agrega 1 a "a0" cada vez que hay un switch
+
+Prueba: (Ascendente)
+					Lista = 3, 4, 1
+					P=0
+
+	3 > 4 NO entonces P+0 ----> P=0 Lista = 3, 4, 1
+	4 > 1 SI entonces P+1 ----> P=1 Lista = 3, 1, 4
+
+		regresa al inicio y compara de nuevo
+
+	3 > 1 SI entonces P+1 ----> P=2 Lista = 1, 3, 4
+	3 > 4 No entonces P+0 ----> P=2 Lista = 1, 3, 4
+		
+		regresa y hace otro ciclo
+
+	1 > 2 No entonces P+0 ----> P=2 Lista = 1, 2, 3
+	2 > 3 No entonces P+0 ----> P=2 Lista = 1, 2, 3
+
+		Aquí termina porque ya tuvo un ciclo con 0 switches
+
+Complejidad:
+
+	No lo se calcular aún pero por la clase de hoy, deduzco que este arreglo  de tipo bubleSort tiene
+	varios ciclos: 
+
+	1) Recorrer todos los valores
+	2) Hacer el switch
+	3) Llevar el conteo de P
+  
+	Así que supongo que son muchos proceso que se van multiplicando y haciendo mas pesados cuando los datos se incrementan.
