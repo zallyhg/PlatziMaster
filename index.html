@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            background-color: cadetblue;
+        }
+        .innerBox{
+            /* width: 100%; */
+            display:inline-flex;
+            flex-shrink: 1;
+            background: whitesmoke;
+            padding: 40px;
+            margin: 10px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+       .text {
+           font-size: 30px;
+           display: inline-flex;
+           flex-shrink: 1;
+           font-weight: 600;
+           padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="innerBox">
+            <p class="text" id="listaOrdenada"></p>  
+        </div>
+    </div>
+<script src="tarea.js"></script>
+</body>
+</html>          
