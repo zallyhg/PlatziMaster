@@ -29,23 +29,23 @@ Si esto es cierto, el valor de la posición 0 osea a0 pasa a la posición 1.
 Luego a0 se encuentra en la posición 1, por lo tanto se compara el valor de la posición 1 con la posición 2 y así se ejecuta el ciclo hasta que el valor a0 deje de ser mayor que el siguiente valor. Puedo crear una Variable que me cuente la posición en la que se encuentra el número para así tener un registro de donde se encuentra a0.
 
 4. Resume tus conclusiones
-El problema para solucionarlo de manera simple, es comparar a0 en la posición actual con el valor siguiente, cada que a0 sea mayor al siguiente, se correrá una casilla y el próximo valor bajara una casilla, ese ciclo se ejecutara hasta que a0 sea menor al siguiente número.
+El problema para solucionarlo de manera simple, es comparar a0 en la posición actual con el valor siguiente, cada que a0 sea mayor al siguiente, se correrá una casilla y el próximo valor bajara una casilla, ese ciclo se ejecutara con todos los valores en el array.
 
 5. Elige el algoritmo
 Array = [N]
 N = cantidad de valores en array
-A0 = el valor iniciara en 0
+La siguiente var Tomara el valor del array en la posición cero A0 = array[0]
 
-Función ejecuta el orden de a0 al ser invocada
+Función que organiza el array
 Ciclo que incremente se encarga de contar la posición
 Variable que es igual a la posición actual valueComp = array[i]
 
-Variable j = a0 (Para asignar el valor en el que se desea empezar y comparar, en este caso la posición 0)
+Variable j = i-1 (i iniciara en 1, por eso se resta, para comparar con el valor anterior)
 
-Ciclo while que comparara la que a0 es mayor que el siguiente numero
+Ciclo while que comparara la que j es mayor que el siguiente numero
 Si es cierto, j se le sumara 1
 
-A0 tomara el valor de la posición actual
+Al final del ciclo se haya la posición del número en 0
 
 6. Prueba
 Se implementa un algoritmo tipo Insertion Sort en Javascript
@@ -72,6 +72,11 @@ function order(arr,size){
 order(array,n);
 console.log(array);
 console.log("a0 ended in position: " + array.indexOf(a0));
+
+Resultado obtenido:
+
+[ 4, 6, 8, 9, 10, 14, 20, 25, 105, 145, 411, 456, 521, 640, 698 ]
+a0 ended in position: 4
 
 7. Obtén la complejidad computacional
 
