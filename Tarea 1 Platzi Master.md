@@ -63,9 +63,9 @@ Tienes una lista desordenada con N números distintos los cuales tienen valores 
 
 >Para el segundo for:
 
->Complejidad temporal: n-1 + n-2 + n-3 + ... + n-n -> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sum_{i=0}^{n} n-i" title="second for loop complexity" />
+>Complejidad temporal: n-1 + n-2 + n-3 + ... + n-n -> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sum_{i=0}^{n}n-i" title="second for loop complexity" />
 
->Complejidad: <img src="https://latex.codecogs.com/svg.latex?\Large&space;(n-1) \sum_{i=0}^{n} n-i" title="second for loop complexity" />
+>Complejidad: <img src="https://latex.codecogs.com/svg.latex?\Large&space;(n-1)\sum_{i=0}^{n}n-i" title="second for loop complexity" />
 
-><img src="https://latex.codecogs.com/svg.latex?\Large&space;O(\sum_{i=0}^{n} n^{2}-in-n+1)" title="second for loop complexity" />
+><img src="https://latex.codecogs.com/svg.latex?\Large&space;O(\sum_{i=0}^{n}n^{2}-in-n+1)" title="second for loop complexity" />
 
