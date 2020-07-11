@@ -15,14 +15,34 @@ Respuesta: El elemento a0 quedara ordenado en la posicion aN despues de realizar
 
 
 4. Resume tus conclusiones
-Respuesta: Para usar un algoritmo u otro depende de la cantidad de datos que se den en lista, la efectividad de ellos depende de factores como la cantidad mencionada y el metodo de desarrollo, para asi usar algoritmos lineales (sin necesidad de ciclos repetitivos), logaritmicos (llamando a funciones) o exponenciales (anidando ciclos uno dentro de otro).
+Respuesta: Para usar un algoritmo u otro depende de la cantidad de datos que se den en lista, la efectividad de ellos depende de factores como la cantidad mencionada y el metodo de desarrollo, para asi usar algoritmos lineales (sin necesidad de ciclos repetitivos anidados), logaritmicos (llamando a funciones) o exponenciales (anidando ciclos uno dentro de otro).
 
 5. Elige el algoritmo
 Respuesta: Si la cantidad de los datos son menores a 50 puedo usar insertionsort (ordenamiento uno a uno).
 Si la cantidad de datos es menor a 100 puedo usar bubblesort o selectionsort
 Si la cantidad es mayor de 100 datos puedo usar algoritmos tipo quicksort o mergesort.
 
-6. Prueba Usando un metodo 1 a 1 (Abrir el archivo de texto directamente para que salga de manera ordenada)
+var arreglo[];
+var a, b ;
+.
+.
+para (j=0; j<=N; j++)
+	para (i=0; i<=N; i++)
+		a= arreglo[i];
+		b= arreglo[i+1];
+		if (a > b)
+			arreglo[i+1]=a;
+			arreglo[i]=b;
+		fin si
+	fin para;
+	N=N-1;
+fin para;
+.
+.
+.
+
+
+6. Prueba Usando este metodo (Abrir el archivo de texto directamente para que salga de manera ordenada)
 Vuelta 1
 (*8, *4, 0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 0  Lista original
 (4, *8, *0, 2, 6, 9, 3, 1, 7, 5)  Iteraccion 1
@@ -79,5 +99,5 @@ Vuelta 9
 (*0, *1, 2, 3, 4, 5, 6, 7, 8, 9)  Iteraccion 43 Ordenado 0, 1, 2, 3, 4, 5, 6, 7, 8, 9; N-1 = 1
 
 7. Obtén la complejidad computacional
-Respuesta: Si los cantidad de datos dados son pocas el algoritmo de ordenamiento puede tener una complejidad de crecimiento exponencial donde pueda anidar varias ciclos repetitivos, esto porque la cantidad de datos no va a ser un problema sencillo de calculo para la computadora, no me va generar un retraso en tiempo y la resolucion va a ser muy rapida.
-Sin embargo si la cantidad de datos es mayor o igual a por ejemplo 100 datos debo buscar soluciones con procedimientos lineales o lagaritmicas donde el gran numero de datos no afecte el tiempo de resolucion y no se vea afectado el calculo
+Respuesta: Si la cantidad de datos dados son pocas el algoritmo de ordenamiento puede tener una complejidad de crecimiento exponencial donde pueda anidar varias ciclos repetitivos, esto porque la cantidad de datos no va a ser un problema sencillo de calculo para la computadora, no me va generar un retraso en tiempo y la resolucion va a ser muy rapida.
+Sin embargo si la cantidad de datos es mayor o igual a por ejemplo 100 datos debo buscar soluciones con procedimientos lineales o logaritmicas donde el gran numero de datos no afecte el tiempo de resolucion y no se vea afectado el calculo
